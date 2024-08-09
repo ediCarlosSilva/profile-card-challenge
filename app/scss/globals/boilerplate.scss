@@ -9,10 +9,30 @@
 body {
   background-color: var(--dark-cyan);
   font-family: var(--font-kumbh);
-  font-size: 16px;
+  font-size: 18px;
   margin: 0 rem(16);
   min-height: calc(100vh - 0.1px);
-  padding: 0;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+// img {
+//   max-width: 100%;
+//   width: 100%;
+// }
+
+.bg-top {
+  position: absolute;
+  left: -600px;
+  top: -600px;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -90%;
+  right: -70%;
+  z-index: -1;
 }
 
 .visually-hidden {
@@ -26,9 +46,11 @@ body {
 
 .attribution {
   margin-top: 2rem;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
 }
